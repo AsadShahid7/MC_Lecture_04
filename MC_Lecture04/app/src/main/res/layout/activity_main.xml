@@ -11,26 +11,46 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello User!"
+        android:text="Hey User!"
         android:textColor="#D0D7FF"
         android:textSize="200px"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginTop="400px"
+        android:layout_marginBottom="100px"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30px"
-        android:hint="Enter Name!"
+        android:layout_margin="40px"
+        android:backgroundTint="#fff"
+        android:hint="Enter username!"
         android:textColor="#fff"
         android:textColorHint="#fff"
-        android:backgroundTint="#fff"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:backgroundTint="#fff"
+        android:hint="Enter password!"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
 
     </EditText>
 
@@ -38,12 +58,15 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30px"
+        android:layout_margin="40px"
         android:background="@color/cardview_light_background"
-        android:text="Click Here"
+        android:text="login"
+        android:textSize="50px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/editText"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
